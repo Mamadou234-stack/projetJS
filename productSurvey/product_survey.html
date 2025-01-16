@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Retour d'expérience sur les marques de luxe</title>
+</head>
+<body>
+  <h1>Bienvenue dans le retour d'expérience sur les produits de luxe</h1>
+  <h2>Fournissez votre avis</h2>
+  <label for="name">Nom :</label><br>
+  <input type="text" id="name" placeholder="Votre Nom" required><br>
+  <label for="age">Âge :</label><br>
+  <input type="number" id="age" placeholder="Votre Âge" required><br>
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" placeholder="Votre Email" required><br>
+  <label for="job">Métier :</label><br>
+  <input type="text" id="job" placeholder="Votre Métier" required><br>
+  <label for="designation">Fonction :</label><br>
+  <input type="text" id="designation" placeholder="Votre Fonction" required><br>
+  <label for="productType">Type de produit :</label><br>
+  <select id="productType" required>
+    <option value="perfume">Parfum</option>
+    <option value="cream">Crème</option>
+    <option value="oils">Huiles</option>
+  </select><br>
+  <label for="feedbackText">Retour d'expérience :</label><br>
+  <textarea id="feedbackText" rows="5" cols="30" placeholder="Entrez votre retour ici" required></textarea><br>
+<button id="submitBtn">Soumettre le retour</button>
+<hr>
+<div id="userInfo" style="display: none;">
+  <h2>Informations utilisateur :</h2>
+  <p>Nom : <span id="userName"></span></p>
+  <p>Âge : <span id="userAge"></span></p>
+  <p>Email : <span id="userEmail"></span></p>
+  <p>Métier : <span id="userJob"></span></p>
+  <p>Fonction : <span id="userDesignation"></span></p>
+  <p>Retour pour <span id="userProductChoice"></span> : <span id="userFeedback"></span></p>
+</div>
+<script src="./product_survey.js"></script>
+</body>
+</html>
