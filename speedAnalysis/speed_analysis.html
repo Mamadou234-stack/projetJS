@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analyse de Test de Vitesse</title>
+</head>
+<body>
+  <h1>Analyse de Vitesse de Taper</h1>
+
+    <label for="inputText">Tapez le texte suivant :</label><br>
+    <textarea id="inputText"  cols="50" rows="5" readonly placeholder="Préparez-vous à taper..."></textarea><br>
+
+    <label for="userInput">Votre saisie :</label><br>
+    <textarea id="userInput"  cols="50" rows="5" placeholder="Commencez à taper quand vous êtes prêt"></textarea><br>
+    <button onclick="startTest()">Démarrer le Test</button>
+        <button onclick="endTest()" id="btn">Terminer le Test</button>
+    <div id="output"></div>
+    <script src="./speed_analysis.js"></script>
+</body>
+</html>
